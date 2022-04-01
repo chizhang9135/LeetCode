@@ -23,10 +23,19 @@ public class Solution {
             result = intArray[intArray.length/2];
         }
         else {
-            result = (intArray[intArray.length/2] + intArray[intArray.length/2 + 1])/(double)2;
+            result = (intArray[intArray.length/2 - 1] + intArray[intArray.length/2])/(double)2;
         }
 
 
         return result;
+    }
+
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        int[] array1 = {1,2};
+        int[] array2 = {3,4};
+
+        System.out.println(solution.findMedianSortedArrays(array1,array2));
     }
 }
