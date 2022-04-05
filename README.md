@@ -1,2 +1,2 @@
 # LeetCode
-## Each problem is label by number
+## Each problem is label by NO.
