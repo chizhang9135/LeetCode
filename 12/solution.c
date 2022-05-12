@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 char * intToRoman(int num){
 
     char* s = (char*) malloc(sizeof(char)*20);
@@ -53,4 +56,12 @@ char * intToRoman(int num){
         }
     }
     return s;
+}
+
+int main(int argc, char const *argv[])
+{
+    int input = atoi(argv[1]);
+    char* out = intToRoman(input);
+    printf("%s\n", out);
+    return 0;
 }
